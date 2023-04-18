@@ -1,0 +1,172 @@
+body {
+    background-color: black;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(206, 162, 152);
+}
+
+header { 
+    overflow: auto;
+    padding: 3em;
+    padding-top: 18em;
+    padding-left: 2em;
+    color: aliceblue; /*text color */
+
+    /*background-color: black;
+    
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: top right; */
+
+    background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 33%, rgba(0,0,0,0) 55%, rgba(0,0,0,0) 100%),
+url(images/OOO.webp) no-repeat top right/cover, black;
+}
+
+h1 img{
+    width: 30%;
+    float: left;
+}
+   
+header p {
+    width: 45%;
+    float: left;
+}
+
+
+
+.button {
+    display: inline-block;
+    width: 4em;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 9px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: none;
+    
+
+}
+
+.button-hover{
+    background-color: brown;
+    border: soild 1px firebrick;
+}
+
+.play {
+    padding-left: 15px;
+    background: url(images/play.svg) no-repeat;
+    background-position-x: 10px ;
+    background-position-y: center;
+    background-size: 12px;
+    margin-left: 30px;
+}
+
+/*** Navigation ****/
+
+nav li { 
+    display: inline-block;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-right: solid 1px aqua;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+nav li:hover {
+    text-decoration: underline;
+    background-color: rgb(212, 182, 239);
+
+}
+
+nav {
+    background-color: rgb(255, 139, 139);
+    padding: 0.5em;
+    padding-left: 3em;
+    margin-bottom: 2em;
+}
+
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/*home page layout*/
+
+main {
+    padding: 0  3em; /*first calur for top and borrom, sec for left and right*/
+}
+
+.col {
+    float: left;
+    margin-right: 2em;
+    width: 47%;
+}
+
+.col:last-child {margin-right: 0;
+
+}
+
+footer {
+    clear: both;
+    margin-left: 3em;
+}
+
+/*episodes css*/
+
+.episodes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card { 
+    flex: 0 0 auto;
+    border: solid 1px rgb(77, 76, 76);
+    border-radius: 10px;
+    width: 30%;
+    margin-bottom: 1em;
+    margin-right: 1em;
+
+}
+
+.card-hover {
+    box-shadow: 10px 5px 10px grey;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0; /*top-left, top-right, bottom-right, bottom-left */
+
+}
+
+.card p, .card h4 {
+    margin: 0.7em;
+} 
+
+/*mobile layout*/
+
+@media (max-width:768px) {
+    .episodes {
+        flex-direction: column;
+    }
+}
+
+.card {
+    width: 100%;
+}
+
+header h1 {
+    
+}
+
+nav li{
+    padding: 0.5em 1em;
+}
+
+/*end of media query*/
