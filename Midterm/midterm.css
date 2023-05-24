@@ -126,6 +126,8 @@ footer {
 }
 
 .card { 
+
+    
     flex: 0 0 auto;
     border: solid 1px rgb(77, 76, 76);
     border-radius: 10px;
@@ -135,12 +137,17 @@ footer {
 
 }
 
-.card-hover {
-    box-shadow: 10px 5px 10px grey;
+.card:hover {
+    background-color: rgb(175, 136, 212);
+    box-shadow: 2px 2px 5px rgb(107, 62, 62);
+    transition: 
+    box-shadow: .5s ease-in, 
+    transform: .5s ease-in ;
+    transition-duration: 1s;
 }
 
 .card img {
-    width: 100%;
+    width: fit-content;
     border-radius: 10px 10px 0 0; /*top-left, top-right, bottom-right, bottom-left */
 
 }
